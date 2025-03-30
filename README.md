@@ -24,9 +24,6 @@ This project is a **UI/UX Design Inspiration & Color Palette Generator** that he
 2. **Generate Color Palettes** – Type a theme (e.g., "modern" or "vintage") to receive AI-generated color suggestions.
 3. **View Live Time** – The current time will be displayed dynamically.
 
-## 📷 Preview
-![Project Preview](link-to-screenshot)
-
 ## ⚡ Setup Instructions
 1. Clone the repository:
    ```sh
