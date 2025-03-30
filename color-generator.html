@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<link rel="icon" type="image/png" href="img/android-chrome-512x512.png"> 
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="img/logo.jfif" alt="" />
+          <h3>Graphic<span>.</span></h3>
+        </div>
+        <button class="hamburger" id="hamburger">☰</button>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="categories.html">Search Categories</a></li>
+          <li><a href="color-generator.html">Color Generator</a></li>
+          <li><a href="About.html">About</a></li>
+        </ul>
+      </nav>
+      <div class="line"></div>
+      <section class="color-generator">
+        <h2>Generate Color Palette for Your Theme</h2>
+        <div class="search-box">
+          <img style="width: 30px; height: 30px;" src="img/circle-quarter-mirror-filled.svg"">
+          <input type="text" id="themeInput" placeholder="Enter theme (e.g., Elegant, Dark, Modern)">
+          <button id="generateBtn">Generate</button>
+        </div>
+        <div id="paletteContainer" class="palette"></div>
+      </section>
+      
+
+      <script src="script2.js"></script>
+</body>
+</html>

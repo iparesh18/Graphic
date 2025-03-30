@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphic</title>
+    <link rel="stylesheet" href="style1.css" />
+  </head>
+  <link rel="icon" type="image/png" href="img/android-chrome-512x512.png"> 
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="img/logo.jfif" alt="" />
+        <h3>Graphic<span>.</span></h3>
+      </div>
+      <button class="hamburger" id="hamburger">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="categories.html">Search Categories</a></li>
+        <li><a href="color-generator.html">Color Generator</a></li>
+        <li><a href="About.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="line"></div>
+    <section id="search-section" class="search-section">
+      <h2>Search for Graphic Designs</h2>
+      <div class="search-bar" style="display: flex; align-items: center;">
+      <img style="width: 30px; height: 30px;" src="img/circle-half-stacked.svg" alt="">
+
+        <input
+        style="padding: 20px;"
+          type="text"
+          id="searchInput"
+          placeholder="Search categories (e.g., logos, banners)"
+        />
+        <button id="searchButton" style="display: flex ; ">
+          Search
+          
+        </button>
+      </div>
+    </section>
+
+    <section id="designs" class="designs">
+      <h2>Graphic Design Templates</h2>
+      <div class="design-grid" id="designGrid">
+        <!-- Images will be loaded here -->
+      </div>
+    </section>
+
+    <script src="script1.js"></script>
+    cr
+  </body>
+</html>

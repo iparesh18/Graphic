@@ -1,0 +1,294 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px;
+  color: white;
+  position: relative;
+}
+.navbar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navbar a {
+  font-family: "gilroy";
+  color: rgb(184, 3, 3);
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo h3 {
+  font-size: 3rem;
+  color: rgb(189, 2, 2);
+  font-family: "abuget";
+}
+.navbar span {
+  color: #00bcd4;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hamburger Menu (Hidden by Default) */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+
+.line {
+  width: 90%;
+  height: 1px;
+  background-color: #e3e3e3;
+  opacity: 0.3;
+}
+
+.color-generator {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background: #000000;
+  border-radius: 10px;
+}
+
+.color-generator h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  width: 70%;
+  padding: 20px;
+  font-size: 16px;
+  border: 2px solid #930202;
+  border-radius: 20px;
+  outline: none;
+  transition: 0.3s;
+  background-color: black !important; /* Always black */
+  color: white !important; /* Ensure text is white */
+  outline: none;
+  caret-color: white; /* White blinking cursor */
+}
+
+.search-box input:-webkit-autofill,
+.search-box input:-webkit-autofill:hover,
+.search-box input:-webkit-autofill:focus,
+.search-box input:-webkit-autofill:active {
+  background-color: black !important;
+  color: white !important;
+  -webkit-text-fill-color: white !important; /* Force white text */
+  -webkit-box-shadow: 0 0 0px 1000px black inset !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.search-box input::-moz-placeholder {
+  color: #aaa;
+}
+
+.search-box input::placeholder {
+  color: #aaa;
+}
+
+.search-box button {
+  background: #000000;
+  color: #930202;
+  padding: 12px 15px;
+  font-size: 2rem;
+  color: rgb(189, 2, 2);
+  font-family: "abuget";
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+/* ===== Palette Display ===== */
+.palette {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.color-box {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.color-box:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* ===== Suggested Colors Section ===== */
+.suggestions {
+  font-family: "gilroy";
+  color: #930202;
+  text-align: left;
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.suggestions h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.suggestions p {
+  font-size: 16px;
+  margin: 8px 0;
+}
+
+.suggestions span {
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+  .color-generator {
+    margin-top: 0rem;
+  }
+  .search-box {
+    gap: 15px;
+  }
+  .search-box input {
+    width: 100%;
+  }
+  .palette {
+    gap: 10px;
+  }
+  .color-box {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media (max-width: 480px) {
+  .color-box {
+    width: 90px;
+    height: 90px;
+  }
+  .suggestions {
+    text-align: center;
+  }
+}
+/*---------------------------------------------------------------------------------------------------------------------*/
+/* Responsive Navbar for Mobile */
+@media (max-width: 600px) {
+  .hamburger {
+    display: block;
+    z-index: 1000;
+  }
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%; /* Initially hidden */
+    width: 50%;
+    height: 100vh;
+    background: #930202;
+    text-align: center;
+    padding-top: 150px;
+    transition: right 0.4s ease-in-out;
+    z-index: 5;
+  }
+  .nav-links a {
+    color: #000;
+    font-size: 1.5rem;
+  }
+  .nav-links.active {
+    right: 0; /* Slide in from the right */
+  }
+  .nav-links li {
+    padding: 15px 0;
+  }
+  .line {
+    display: none;
+  }
+  .heading {
+    display: none !important;
+  }
+  .res-heading {
+    display: block !important;
+  }
+  .res-heading .div h1 {
+    font-weight: 500;
+    color: #fff;
+    font-family: "Brigends Expanded";
+  }
+  .res-heading .div span {
+    font-size: 3rem;
+    color: #930202;
+    color: rgb(189, 2, 2);
+    font-family: "abuget";
+  }
+}/*# sourceMappingURL=style2.css.map */
