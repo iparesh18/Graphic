@@ -36,5 +36,5 @@ This project is a **UI/UX Design Inspiration & Color Palette Generator** that he
 This project is open-source under the **MIT License**.
 
 ## 👨‍💻 Author
-Developed with ❤️ by **[Your Name]**
+Developed with ❤️ by **[Paresh S.]**
 
